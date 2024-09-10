@@ -6,21 +6,22 @@ https://genius.com/Monty-python-monty-python-and-the-holy-grail-bridge-of-death-
 */
 
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
 	"strings"
 )
 
 func main() {
 
+	//Test Reading Only One Input
+
 	inputReader := bufio.NewReader(os.Stdin)
 	input, _ := inputReader.ReadString('\n')
 	fmt.Println(input)
 
-
 	//Testing String Import Library
-	str1 := "Testing String";
+	str1 := "Testing String"
 
 	res1 := strings.ToLower(str1)
 
@@ -29,58 +30,89 @@ func main() {
 	//Declaring Variables
 	//var name string
 
-	name := "";
+	name := ""
 	nameStr := strings.ToLower(name)
+
+	fmt.Print("Enter Name")
+	nameInput, _ := inputReader.ReadString('\n')
+	fmt.Println(nameInput)
 
 	//var quest string
 
-	quest := "";
+	quest := ""
 	questStr := strings.ToLower(quest)
 
+	fmt.Print("Enter Quest")
+	questInput, _ := inputReader.ReadString('\n')
+	fmt.Println(questInput)
 
 	//var color string
-	color := "";
+	color := ""
 	colorStr := strings.ToLower(color)
 
-	//Strings 
-	
+	fmt.Print("Enter Color")
+	colorInput, _ := inputReader.ReadString('\n')
+	fmt.Println(colorInput)
+
+	//Strings
 
 	//var capital string
-	capital := "";
-capitalStr := strings.ToLower(color)
+	capital := ""
+	capitalStr := strings.ToLower(color)
 
-	var finalQuestion string
+	fmt.Print("Enter Capital")
+	capitalInput, _ := inputReader.ReadString('\n')
+	fmt.Println(capitalInput)
+
+	if capitalInput == "Manama" {
+		fmt.Println("Right. Off you go.")
+	}else {
+		fmt.Println("Auuuuuuuuuuuuuuuuugh")
+	}
+
+	//var finalQuestion string
+	finalQuestion := ""
+	finalQuestionStr := strings.ToLower(finalQuestion)
+
+	fmt.Print("Final Question")
+	finalQuestionInput, _ := inputReader.ReadString('\n')
+	fmt.Println(finalQuestionInput)
+
+	if finalQuestionInput == "What do you mean? An African or European swallow?" {
+		fmt.Println("What? I don't know that! Auuuuuuuuuuuuuuuuugh")
+	} else {
+		fmt.Println("Auuuuuuuuuuuuuuuuugh")
+	}
 
 	//Questions
-	fmt.Print("What is your name? ")
+	fmt.Println("What is your name? ")
 	fmt.Scanln(&nameStr)
 
-	fmt.Print("What is your quest? ")
+	fmt.Println("What is your quest? ")
 	fmt.Scanln(&questStr)
-	fmt.Print("What is your favorite color? ")
+	fmt.Println("What is your favorite color? ")
 	fmt.Scanln(&colorStr)
 
 	//Off guard questions
-	fmt.Print("What is the capital of Bahrain?")
+	fmt.Println("What is the capital of Bahrain?")
 	fmt.Scanln(&capitalStr)
 
-		//Determine Correct Answer for Bahrain Capital
-	   if(capital == "Manama") {
-	   fmt.Print("Right. Off you go.")
-	   } else {
-	 	fmt.Print("Auuuuuuuuuuuuuuuuugh")  
-	   }
-	
+	//Determine Correct Answer for Bahrain Capital
+	if capital == "Manama" {
+		fmt.Println("Right. Off you go.")
+	} else {
+		fmt.Println("Auuuuuuuuuuuuuuuuugh")
+	}
 
 	//Final Questions
-	fmt.Print("What is the air-speed velocity of an unladen swallow? ")
-	fmt.Scanln(&finalQuestion)
+	fmt.Println("What is the air-speed velocity of an unladen swallow? ")
+	fmt.Scanln(&finalQuestionStr)
 
 	//Answer
-	if(finalQuestion == "What do you mean? An African or European swallow?") {
-		fmt.Print("What? I don't know that! Auuuuuuuuuuuuuuuuugh");
+	if finalQuestion == "What do you mean? An African or European swallow?" {
+		fmt.Println("What? I don't know that! Auuuuuuuuuuuuuuuuugh")
 	} else {
-		fmt.Print("Auuuuuuuuuuugh");
+		fmt.Println("Auuuuuuuuuuugh")
 	}
-	
+
 }
