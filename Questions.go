@@ -14,6 +14,8 @@ import (
 
 func main() {
 
+	fmt.Print("Type anything to continue ")
+
 	//Test Reading Only One Input
 	inputReader := bufio.NewReader(os.Stdin)
 	input, _ := inputReader.ReadString('\n')
@@ -32,7 +34,7 @@ func main() {
 	name := ""
 	nameStr := strings.ToLower(name)
 
-	fmt.Print("Enter Name")
+	fmt.Print("Enter Name ")
 	nameInput, _ := inputReader.ReadString('\n')
 	fmt.Println(nameInput)
 
@@ -41,7 +43,7 @@ func main() {
 	quest := ""
 	questStr := strings.ToLower(quest)
 
-	fmt.Print("Enter Quest")
+	fmt.Print("Enter Quest ")
 	questInput, _ := inputReader.ReadString('\n')
 	fmt.Println(questInput)
 
@@ -49,7 +51,7 @@ func main() {
 	color := ""
 	colorStr := strings.ToLower(color)
 
-	fmt.Print("Enter Color")
+	fmt.Print("Enter Color ")
 	colorInput, _ := inputReader.ReadString('\n')
 	fmt.Println(colorInput)
 
@@ -57,9 +59,9 @@ func main() {
 
 	//var capital string
 	capital := ""
-	capitalStr := strings.ToLower(color)
+	capitalStr := strings.ToLower(capital)
 
-	fmt.Print("Enter Capital")
+	fmt.Print("Enter Capital ")
 	capitalInput, _ := inputReader.ReadString('\n')
 	fmt.Println(capitalInput)
 
@@ -73,7 +75,7 @@ func main() {
 	finalQuestion := ""
 	finalQuestionStr := strings.ToLower(finalQuestion)
 
-	fmt.Print("Final Question")
+	fmt.Print("Final Question ")
 	finalQuestionInput, _ := inputReader.ReadString('\n')
 	fmt.Println(finalQuestionInput)
 
