@@ -15,7 +15,6 @@ import (
 func main() {
 
 	//Test Reading Only One Input
-
 	inputReader := bufio.NewReader(os.Stdin)
 	input, _ := inputReader.ReadString('\n')
 	fmt.Println(input)
@@ -66,7 +65,7 @@ func main() {
 
 	if capitalInput == "Manama" {
 		fmt.Println("Right. Off you go.")
-	}else {
+	} else {
 		fmt.Println("Auuuuuuuuuuuuuuuuugh")
 	}
 
