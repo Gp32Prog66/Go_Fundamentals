@@ -34,7 +34,7 @@ func main() {
 	name := ""
 	nameStr := strings.ToLower(name)
 
-	fmt.Print("Enter Name ")
+	fmt.Print("What is your name? ")
 	nameInput, _ := inputReader.ReadString('\n')
 	fmt.Println(nameInput)
 
@@ -43,7 +43,7 @@ func main() {
 	quest := ""
 	questStr := strings.ToLower(quest)
 
-	fmt.Print("Enter Quest ")
+	fmt.Print("What is your quest? ")
 	questInput, _ := inputReader.ReadString('\n')
 	fmt.Println(questInput)
 
@@ -51,7 +51,7 @@ func main() {
 	color := ""
 	colorStr := strings.ToLower(color)
 
-	fmt.Print("Enter Color ")
+	fmt.Print("What is your favorite color? ")
 	colorInput, _ := inputReader.ReadString('\n')
 	fmt.Println(colorInput)
 
@@ -61,15 +61,17 @@ func main() {
 	capital := ""
 	capitalStr := strings.ToLower(capital)
 
-	fmt.Print("Enter Capital ")
-	capitalInput, _ := inputReader.ReadString('\n')
-	fmt.Println(capitalInput)
+	fmt.Println("What is the capital of Bahrain? ")
+	fmt.Scanln(&capitalStr)
 
-	if capitalInput == "Manama" {
+	if capitalStr == "Manama" {
 		fmt.Println("Right. Off you go.")
 	} else {
 		fmt.Println("Auuuuuuuuuuuuuuuuugh")
 	}
+
+
+/*
 
 	//var finalQuestion string
 	finalQuestion := ""
@@ -85,29 +87,34 @@ func main() {
 		fmt.Println("Auuuuuuuuuuuuuuuuugh")
 	}
 
+	*/
 	//Questions
 	fmt.Println("What is your name? ")
 	fmt.Scanln(&nameStr)
 
-	fmt.Println("What is your quest? ")
+	//fmt.Println("What is your quest? ")
 	fmt.Scanln(&questStr)
 	fmt.Println("What is your favorite color? ")
 	fmt.Scanln(&colorStr)
 
 	//Off guard questions
-	fmt.Println("What is the capital of Bahrain?")
-	fmt.Scanln(&capitalStr)
+	//fmt.Println("What is the capital of Bahrain?")
+	//fmt.Scanln(&capitalStr)
 
+
+	/*
 	//Determine Correct Answer for Bahrain Capital
 	if capital == "Manama" {
 		fmt.Println("Right. Off you go.")
 	} else {
 		fmt.Println("Auuuuuuuuuuuuuuuuugh")
 	}
-
+*/
 	//Final Questions
-	fmt.Println("What is the air-speed velocity of an unladen swallow? ")
-	fmt.Scanln(&finalQuestionStr)
+	//fmt.Println("What is the air-speed velocity of an unladen swallow? ")
+	//fmt.Scanln(&finalQuestionStr)
+
+/*
 
 	//Answer
 	if finalQuestion == "What do you mean? An African or European swallow?" {
@@ -115,5 +122,5 @@ func main() {
 	} else {
 		fmt.Println("Auuuuuuuuuuugh")
 	}
-
+*/
 }
